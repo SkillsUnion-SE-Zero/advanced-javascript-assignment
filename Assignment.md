@@ -46,7 +46,7 @@ demo(); // print values
 
 
 
-### 3: [Closure]
+### 3: Closure
 
 Write a JavaScript closure that will execute the inner function
 

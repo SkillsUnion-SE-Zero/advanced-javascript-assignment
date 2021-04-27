@@ -4,7 +4,7 @@
 
 ## Problems
 
-### 1: [Scope]
+### 1: Scope
 
 Write a JavaScript code that has a global variable defined in first line in global scope. Then  =have a local variable defined inside the a function.
 
@@ -24,7 +24,7 @@ playGame(){
 
 
 
-### 2: [Hoisting]
+### 2: Hoisting
 
 Write a JavaScript code that will Hoist a function scoped variable
 
@@ -73,7 +73,7 @@ Write a JavaScript closure that will execute the inner function
     	    // make call to inner function to display variable
 
 ```
-### 4: [IIFE]
+### 4: IIFE
 
 Write a JavaScript Immediately invoked function that says Hello World!!
 
@@ -82,7 +82,7 @@ Write a JavaScript Immediately invoked function that says Hello World!!
 
 
 
-### 5: [Higher order function]
+### 5: Higher order function
 
 Write a JavaScript function that would take another function as input
 

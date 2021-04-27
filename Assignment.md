@@ -17,9 +17,9 @@ Write a JavaScript code that has a global variable defined in first line in glob
 
 ```js
 // global
-playGame(){
-  //local
-};
+  demo(){
+    //local
+  };
 ```
 
 

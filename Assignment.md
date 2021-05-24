@@ -6,7 +6,8 @@
 
 ### 1: Scope
 
-Write a JavaScript code that has a global variable defined in first line in global scope. Then  =have a local variable defined inside the a function.
+Write a JavaScript code snippet that has a global variable defined on the first line in 
+the global scope. Then have a local variable defined inside the a function.
 
 1. Under the `src` directory, create a file named `scope.js`
 1. Declare a global variable
@@ -17,36 +18,66 @@ Write a JavaScript code that has a global variable defined in first line in glob
 
 ```js
 // global
-  demo(){
-    //local
-  };
+demo(){
+  // local
+};
+```
+### 2: Scope Practice
+
+Execute the code in Function 1 and 2, explain the difference in output.
+
+```javascript
+// Function #1
+function foo() {
+  function bar() {
+    i = 100;
+  }
+
+  bar();
+
+  console.log(i);
+}
+
+foo();
+
+// Function #2
+function foo() {
+  function bar() {
+    let i = 100;
+  }
+
+  bar();
+
+  console.log(i);
+}
+
+foo();
+
+// YOUR ANSWER
 ```
 
 
+### 3: Hoisting
 
-### 2: Hoisting
-
-Write a JavaScript code that will Hoist a function scoped variable
-
-1. Under the `src` directory, create a file named `hoisting.js`
-1. Define a function named `demo`
-1. Declare, log and assign value to the variable
+Try to guess the output of the following code
 
 **Example:**
 
-```js
-function demo(){
-  // define variable
-  //console log variable
-  // assign value
-    }
-demo(); // print values
-};
+```javascript
+let x = 10;
+
+function test() {
+  let x = 20;
+}
+
+test();
+
+console.log(x);
+
+// YOUR ANSWER
 ```
 
-
-
-### 3: Closure
+### 4: Closure
 
 Write a JavaScript closure that will execute the inner function
 
@@ -57,56 +88,25 @@ Write a JavaScript closure that will execute the inner function
 
 **Example:**
 
+```javascript
+// closure
 
-```js
-           // closure
-         function outer()
-      	 {
-        		//variable to be created
-      		 function inner(){
-      			 // variable to be returned
-    		 }
-    		 return inner;
-    		 }
-  	       //store inner function in variable
+function outer() {
+  // variable to be created
 
-    	    // make call to inner function to display variable
+  function inner(){
+    // variable to be returned
+  }
 
-```
-### 4: IIFE
+  return inner;
 
-Write a JavaScript Immediately invoked function that says Hello World!!
+}
 
-1. Under the `src` directory, create a file named `iife.js`
-1. Define the hello world function
+// store inner function in variable
 
-
-
-### 5: Higher order function
-
-Write a JavaScript function that would take another function as input
-
-1. Under the `src` directory, create a file named `higherOrder.js`
-1. Define two function named `function 1` and `function 2`
-1. Pass `function 1`as input parameter to  `function 2`  and return  `function 1`
-
-
-
-**Example:**
-
-```js
-
-   function function1(a, b) {
-   return a + b;
-   }
-
-   function function2(a, b, function1) {
-    // return function1
-   }
+// make call to inner function to display variable
 
 ```
-
-
 ## Submission Guidelines
 
 - Cite any relevant sources consulted during your research
